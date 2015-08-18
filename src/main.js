@@ -221,8 +221,8 @@ if ((isOnDocument() || isOnLocal()) && !isAlreadyParsed()) {
     +   '       </ul>'
     +   '   </li>'
     +   '</ul>'
-    +   '<p class="footer"><a title="Source code on GitHub" href="https://github.com/nurpa/better-lex/">Better Lex</a> version ' + version + '</p>'
-    +   '<p class="footer update"><a href="http://nurpa.be/better-lex/?version=' + version + '&lang=' + lang + '">' + trans.update + '</a></p>';
+    +   '<p class="footer"><a title="Source code on GitHub" href="https://github.com/nurpa/betterlex-bookmarklet/">Better Lex bookmarklet</a> v' + version + '</p>'
+    +   '<p class="footer update"><a href="http://nurpa.be/betterlex-bookmarklet/?version=' + version + '&lang=' + lang + '">' + trans.update + '</a></p>';
 
     b.insertBefore(sidebar, b.firstChild);
 
