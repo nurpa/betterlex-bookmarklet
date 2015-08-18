@@ -11,7 +11,7 @@
 */
 
 // Better Lex version
-var version = '1.0.0';
+var version = '1.0.1';
 
 var d = document,
     b = d.body,
