@@ -1,0 +1,30 @@
+{
+    "fr": {
+        "alertDefault" : "Better Lex\n\nRedirection vers le formulaire de recherche eJustel.",
+        "alertFrame"   : "Better Lex\n\nRedirection vers le document original.\nLorsque le document est chargé, cliquez à nouveau sur \"Better Lex\".",
+        "alertTrans"   : "Better Lex\n\nRedirection vers le document original.\nLorsque le document est chargé, cliquez à nouveau sur \"Better Lex\".",
+        "dark"    : "Sombre",
+        "display" : "Th\xE8me",
+        "font"    : "Police",
+        "infoBox" : "Survolez \xE0 tout moment le bord gauche de la page pour afficher le menu.",
+        "light"   : "Clair",
+        "nav"     : "Navigation",
+        "source"  : "Document original",
+        "trans"   : "Version n\xE9erlandaise",
+        "update"  : "Rechercher mise \xE0 jour"
+    },
+    "nl": {
+        "alertDefault" : "Better Lex\n\nTerug naar het zoekformulier eJustel.",
+        "alertFrame"   : "Better Lex\n\nTerug naar het oorspronkelijk document.\nWanneer het document geladen is, klik nogmaals op \"Better Lex\".",
+        "alertTrans"   : "Better Lex\n\nTerug naar het oorspronkelijk document.\nWanneer het document geladen is, klik nogmaals op \"Better Lex\".",
+        "dark"    : "Donker",
+        "display" : "Weergave",
+        "font"    : "Lettertype",
+        "infoBox" : "Beweeg je muis over de linkerrand van de pagina om het menu weer te geven.",
+        "light"   : "Licht",
+        "nav"     : "Navigatie",
+        "source"  : "Oorspronkelijk document",
+        "trans"   : "Franstalige versie",
+        "update"  : "Zoeken naarr updates"
+    }
+}

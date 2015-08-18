@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+
+# Execute the script from the right location
+
+source="${BASH_SOURCE}"
+
+while [ -h "$source" ]; do
+    source="$(readlink $source)"
+done
+
+cd "$(dirname $source)"
+
+
+# Utility functions
+
+function is_installed()
+{
+    command -v "$1" >/dev/null 2>&1
+}
+
+function status()
+{
+    echo
+    echo "betterlex: $1"
+    echo
+}
+
+
+# Move to the "lib" directory
+
+cd ../lib
+
+
+# Create directories
+
+for dir in "composer" "spotch"; do
+    if [ ! -d "$dir" ]; then
+        mkdir "$dir"
+    fi
+done
+
+
+# Install dependencies
+
+## Check if PHP is installed
+
+if ! is_installed php; then
+    status "please install PHP before continuing."
+    exit
+fi
+
+## Install Composer
+
+if [ ! -e "composer/composer.phar" ]; then
+    status "installing Composer..."
+
+    php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=composer
+fi
+
+## Install Spotch
+
+if [ ! -e "spotch/bin/spotch" ]; then
+    status "installing Spotch..."
+
+    git clone "https://github.com/miclf/spotch.git" "spotch"
+    (cd spotch && ../composer/composer.phar update)
+    chmod +x "spotch/bin/spotch"
+fi

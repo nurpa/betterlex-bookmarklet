@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+
+# Execute the script from the right location
+
+source="${BASH_SOURCE}"
+
+while [ -h "$source" ]; do
+    source="$(readlink $source)"
+done
+
+cd "$(dirname $source)"
+
+
+# Resources
+
+bin="../bin/"
+src="../src/"
+
+css="${src}main.css"
+main="${src}main.js"
+trans="${src}translations.json"
+utils="${src}utility.js"
+
+
+# Where the magic happens
+
+for bookmarkletLang in "nl" "fr"; do
+
+    tmpCSS=$(mktemp -t "blex_css.js.XXXXXXXXXX")
+    tmpTrans=$(mktemp -t "blex_trans.js.XXXXXXXXXX")
+    timestamp=$(date +"%Y-%m-%d_%Hh%M")
+
+    ## Generate temporary files containing JS vars
+
+    ### CSS (minified)
+
+    if [ -f "$tmpCSS" ]; then
+        echo "var css = '$(cat $css)';" > "$tmpCSS"
+    else
+        echo "betterlex: unable to create temporary file $tmpCSS"
+        exit
+    fi
+
+    ### Translations
+
+    if [ -f "$tmpTrans" ]; then
+        echo "var bookmarkletLang = '$bookmarkletLang'; window._translations = $(cat $trans);" > "$tmpTrans"
+    else
+        echo "betterlex: unable to create temporary file $tmpTrans"
+        exit
+    fi
+
+    ## Generate the bookmarklet
+
+    ../lib/spotch/bin/spotch make "$tmpTrans" "$tmpCSS" "$utils" "$main" --output "${bin}bookmarklet_${bookmarkletLang}_${timestamp}.js" --no-minify "$tmpTrans"
+done
