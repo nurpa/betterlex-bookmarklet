@@ -37,7 +37,7 @@ function detectLang(url) {
  */
 function isOnBetterLex() {
 
-    var needle = 'http://nurpa.be/better-lex/';
+    var needle = 'http://nurpa.be/betterlex-bookmarklet/';
 
     return (url.lastIndexOf(needle, 0) === 0);
 }
