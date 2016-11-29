@@ -222,7 +222,7 @@ if ((isOnDocument() || isOnLocal()) && !isAlreadyParsed()) {
     +   '   </li>'
     +   '</ul>'
     +   '<p class="footer"><a title="Source code on GitHub" href="https://github.com/nurpa/betterlex-bookmarklet/">Better Lex bookmarklet</a> v' + version + '</p>'
-    +   '<p class="footer update"><a href="http://nurpa.be/betterlex-bookmarklet/?version=' + version + '&lang=' + lang + '">' + trans.update + '</a></p>';
+    +   '<p class="footer update"><a href="https://nurpa.be/betterlex-bookmarklet/?version=' + version + '&lang=' + lang + '">' + trans.update + '</a></p>';
 
     b.insertBefore(sidebar, b.firstChild);
 
@@ -300,7 +300,7 @@ if ((isOnDocument() || isOnLocal()) && !isAlreadyParsed()) {
     // If the user is on the Better Lex website, we redirect him/her to the
     // homepage passing his/her version and language as parameters.
 
-    d.location = 'http://nurpa.be/better-lex/?version=' + version + '&lang=' + lang;
+    d.location = 'https://nurpa.be/betterlex-bookmarklet/?version=' + version + '&lang=' + lang;
 
 } else if (isOnFrame()) {
 
