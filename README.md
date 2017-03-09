@@ -2,6 +2,10 @@
 
 Better Lex bookmarklet is a tool for improving readability of the online Belgian consolidated legislation. It requires a modern Web browser, such as Firefox.
 
+## Installing
+
+See [Better Lex updater/installer](https://nurpa.be/betterlex-bookmarklet/) ([en](https://nurpa.be/betterlex-bookmarklet/?lang=en), [fr](https://nurpa.be/betterlex-bookmarklet/?lang=fr), [nl](https://nurpa.be/betterlex-bookmarklet/?lang=en)) or, if you are familiar with bookmarklets, grab the [latest build on github](https://github.com/nurpa/betterlex-bookmarklet/releases).
+
 ## Code overview
 
 Here is the structure of this project.
