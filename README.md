@@ -12,7 +12,6 @@ See [Better Lex updater/installer](https://nurpa.be/betterlex-bookmarklet/) ([en
 | --- | ---|
 | ![title-before] | ![title-after] |
 | ![article-before] | ![article-after] |
-| ![article-before] | ![article-after] |
 | ![updates-before] | ![updates-after] |
 
 [title-before]: https://imgs.be/58c1afac-15f.png
