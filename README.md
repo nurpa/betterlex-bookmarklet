@@ -2,7 +2,7 @@
 
 Better Lex bookmarklet is a tool for improving readability of the online Belgian consolidated legislation. It requires a modern Web browser, such as Firefox.
 
-## Overview
+## Code overview
 
 Here is the structure of this project.
 
