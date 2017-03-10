@@ -8,18 +8,21 @@ See [Better Lex updater/installer](https://nurpa.be/betterlex-bookmarklet/) ([en
 
 ## Screenshots
 
-| Before | After |
-| --- | ---|
-| ![title-before] | ![title-after] |
-| ![article-before] | ![article-after] |
-| ![updates-before] | ![updates-after] |
+| Before | After | After (dark theme) |
+| --- | --- | --- |
+| ![title-before] | ![title-after] | ![title-after-dark] |
+| ![article-before] | ![article-after] | ![article-after-dark] |
+| ![updates-before] | ![updates-after] | ![updates-after-dark] |
 
 [title-before]: https://imgs.be/58c1afac-15f.png
 [title-after]: https://imgs.be/58c1b01a-1f51.png
+[title-after-dark]: https://imgs.be/58c210e7-220.png
 [article-before]: https://imgs.be/58c1b07b-e20.png
 [article-after]: https://imgs.be/58c1b08a-f54.png
+[article-after-dark]: https://imgs.be/58c21147-1e34.png
 [updates-before]: https://imgs.be/58c1b10f-cd1.png
 [updates-after]: https://imgs.be/58c1b11c-2270.png
+[updates-after-dark]: https://imgs.be/58c2118e-b80.png
 
 ## Code overview
 
